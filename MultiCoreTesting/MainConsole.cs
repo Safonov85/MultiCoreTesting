@@ -8,31 +8,10 @@ namespace MultiCoreTesting
 {
     class MainConsole
     {
-        static ConsoleKeyInfo inputKey;
-        static bool buttonPress = false;
+        static MultiThreading multiThread = new MultiThreading();
         static void Main(string[] args)
         {
-            while(buttonPress == false)
-            {
-                Console.WriteLine("Do you want to test all of this computers CPU cores at once? (y/n)");
-                inputKey = Console.ReadKey(true);
-
-                if (inputKey.Key == ConsoleKey.Y)
-                {
-                    Console.WriteLine("you pressed Yes");
-                    buttonPress = true;
-                }
-                else if (inputKey.Key == ConsoleKey.N)
-                {
-                    Console.WriteLine("you pressed No");
-                    buttonPress = true;
-                }
-                else
-                {
-                    continue;
-                }
-            }
-
+            multiThread.RunMultiCore();
             Console.WriteLine("Press enter to exit.");
             Console.ReadLine();
         }
