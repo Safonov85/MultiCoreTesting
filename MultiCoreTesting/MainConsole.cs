@@ -9,6 +9,7 @@ namespace MultiCoreTesting
     class MainConsole
     {
         static MultiThreading multiThread = new MultiThreading();
+
         static void Main(string[] args)
         {
             multiThread.RunMultiCore();
