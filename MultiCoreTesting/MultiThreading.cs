@@ -8,6 +8,7 @@ namespace MultiCoreTesting
 {
     public class MultiThreading
     {
+        // Public Variables
         public static ConsoleKeyInfo inputKey;
         public static bool buttonPress = false;
         public static bool continueApp = true;
@@ -16,6 +17,7 @@ namespace MultiCoreTesting
         {
             while (continueApp == true)
             {
+                // Continue Or Turn Off App
                 Console.WriteLine("Do you want to start the app? (y/n)");
                 inputKey = Console.ReadKey(true);
                 if(inputKey.Key == ConsoleKey.Y)
@@ -52,8 +54,7 @@ namespace MultiCoreTesting
 
                             Console.WriteLine("Calculation finished in: " + elapsed.ToString());
                             Console.WriteLine("Used " + Environment.ProcessorCount + " cores on your CPU");
-
-                            //Console.ReadLine();
+                            
                             buttonPress = true;
                         }
                         else if (inputKey.Key == ConsoleKey.N)
@@ -81,8 +82,7 @@ namespace MultiCoreTesting
                             TimeSpan elapsed = DateTime.Now - startTime;
 
                             Console.WriteLine("Calculation finished in: " + elapsed.ToString());
-
-                            //Console.ReadLine();
+                            
                             buttonPress = true;
                         }
                         else
@@ -100,7 +100,6 @@ namespace MultiCoreTesting
                     break;
                 }
                 // loop continues as long as you don't choose a calculation to preform
-                
             }
             
         }
