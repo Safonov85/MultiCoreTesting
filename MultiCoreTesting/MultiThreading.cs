@@ -51,10 +51,16 @@ namespace MultiCoreTesting
                             });
 
                             TimeSpan elapsed = DateTime.Now - startTime;
-
-                            Console.WriteLine("Calculation finished in: " + elapsed.ToString());
-                            Console.WriteLine("Used " + Environment.ProcessorCount + " cores on your CPU");
                             
+                            Console.Write("Calculation finished in: ");
+                            Console.BackgroundColor = ConsoleColor.Blue;
+                            Console.ForegroundColor = ConsoleColor.White;
+                            Console.Write(elapsed.ToString());
+                            Console.WriteLine();
+                            Console.WriteLine("Used " + Environment.ProcessorCount + " cores on your CPU");
+                            Console.BackgroundColor = ConsoleColor.Black;
+                            Console.ForegroundColor = ConsoleColor.White;
+
                             buttonPress = true;
                         }
                         else if (inputKey.Key == ConsoleKey.N)
