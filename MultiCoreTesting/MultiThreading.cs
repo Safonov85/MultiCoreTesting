@@ -88,8 +88,15 @@ namespace MultiCoreTesting
 
                             TimeSpan elapsed = DateTime.Now - startTime;
 
-                            Console.WriteLine("Calculation finished in: " + elapsed.ToString());
-                            
+                            Console.Write("Calculation finished in: ");
+                            Console.BackgroundColor = ConsoleColor.Blue;
+                            Console.ForegroundColor = ConsoleColor.White;
+                            double convertToCommaSec = elapsed.TotalSeconds;
+                            Console.Write(convertToCommaSec.ToString("0.00") + " seconds");
+                            Console.WriteLine();
+                            Console.BackgroundColor = ConsoleColor.Black;
+                            Console.ForegroundColor = ConsoleColor.White;
+
                             buttonPress = true;
                         }
                         else
