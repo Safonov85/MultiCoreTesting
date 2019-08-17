@@ -55,7 +55,8 @@ namespace MultiCoreTesting
                             Console.Write("Calculation finished in: ");
                             Console.BackgroundColor = ConsoleColor.Blue;
                             Console.ForegroundColor = ConsoleColor.White;
-                            Console.Write(elapsed.ToString());
+                            double convertToCommaSec = elapsed.TotalSeconds;
+                            Console.Write(convertToCommaSec.ToString("0.00") + " seconds");
                             Console.WriteLine();
                             Console.WriteLine("Used " + Environment.ProcessorCount + " cores on your CPU");
                             Console.BackgroundColor = ConsoleColor.Black;
