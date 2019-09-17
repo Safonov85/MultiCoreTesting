@@ -96,6 +96,7 @@ namespace MultiCoreTesting
                             Console.WriteLine();
                             Console.BackgroundColor = ConsoleColor.Black;
                             Console.ForegroundColor = ConsoleColor.White;
+                            Console.WriteLine("Used 1 core out of " + Environment.ProcessorCount);
 
                             buttonPress = true;
                         }
