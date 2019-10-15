@@ -40,6 +40,7 @@ namespace MultiCoreTesting
                             }
 
                             Console.WriteLine();
+                            Console.WriteLine("10 million numbers were added to list");
                             Console.WriteLine("press enter to Start");
                             Console.ReadLine();
                             DateTime startTime = DateTime.Now;
