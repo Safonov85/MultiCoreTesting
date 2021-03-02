@@ -12,6 +12,11 @@ namespace MultiCoreTesting
         public static ConsoleKeyInfo inputKey;
         public static bool buttonPress = false;
         public static bool continueApp = true;
+        
+        Public void RunSingleCore()
+        {
+            // code for running one core/thread for a task
+        } 
 
         public void RunMultiCore()
         {
