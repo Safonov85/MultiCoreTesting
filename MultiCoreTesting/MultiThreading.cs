@@ -13,7 +13,7 @@ namespace MultiCoreTesting
         public static bool buttonPress = false;
         public static bool continueApp = true;
         
-        Public void RunSingleCore()
+        public void RunSingleCore()
         {
             // code for running one core/thread for a task
         } 
