@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 
 namespace MultiCoreTesting
 {
+    // need another class for counting % each core use
+   
     class MainConsole
     {
         static MultiThreading multiThread = new MultiThreading();
